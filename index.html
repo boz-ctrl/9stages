@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Empire Lifecycle: 9 Stages</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Turn-based business strategy game</p>
+      <h1>Empire Lifecycle</h1>
+      <p>Build a company through the 9 stages of enterprise development. Manage cash, talent, innovation, reputation, market share and investor pressure.</p>
+    </div>
+    <div class="mode-card">
+      <label for="modeSelect">Game mode</label>
+      <select id="modeSelect">
+        <option value="single">Single Player vs Dr Bozward AI</option>
+        <option value="hotseat">Local Multiplayer Hotseat</option>
+      </select>
+      <button id="newGameBtn">New Game</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel dashboard">
+      <div class="turn-bar">
+        <div><span class="label">Quarter</span><strong id="quarter">1</strong></div>
+        <div><span class="label">Active player</span><strong id="activePlayer">-</strong></div>
+        <div><span class="label">Action points</span><strong id="actionPoints">-</strong></div>
+      </div>
+      <h2 id="companyName">Company</h2>
+      <p id="stageName" class="stage-pill">Stage</p>
+      <p id="stageDescription" class="stage-description"></p>
+      <div class="metrics" id="metrics"></div>
+    </section>
+
+    <section class="panel actions">
+      <h2>Strategic Actions</h2>
+      <p>Choose actions for the active company. Each turn represents one business quarter.</p>
+      <div id="actionsList" class="actions-list"></div>
+      <button id="endTurnBtn" class="secondary">End Turn</button>
+    </section>
+
+    <section class="panel rivals">
+      <h2>Companies</h2>
+      <div id="playersList"></div>
+    </section>
+
+    <section class="panel log-panel">
+      <h2>Event Log</h2>
+      <div id="eventLog" class="event-log"></div>
+    </section>
+  </main>
+
+  <script src="rules.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
