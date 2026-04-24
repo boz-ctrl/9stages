@@ -11,7 +11,7 @@
     <div>
       <p class="eyebrow">Turn-based business strategy game</p>
       <h1>Empire Lifecycle</h1>
-      <p>Build a company through the 9 stages of enterprise development. Manage cash, talent, innovation, reputation, market share and investor pressure.</p>
+      <p>Build a company through the 9 stages of enterprise development. Manage cash, talent, innovation, reputation, market share, funding and exit timing.</p>
     </div>
     <div class="mode-card">
       <label for="modeSelect">Game mode</label>
@@ -33,12 +33,13 @@
       <h2 id="companyName">Company</h2>
       <p id="stageName" class="stage-pill">Stage</p>
       <p id="stageDescription" class="stage-description"></p>
+      <div class="progress-track"><div id="stageProgress" class="progress-fill"></div></div>
       <div class="metrics" id="metrics"></div>
     </section>
 
     <section class="panel actions">
       <h2>Strategic Actions</h2>
-      <p>Choose actions for the active company. Each turn represents one business quarter.</p>
+      <p>Choose actions for the active company. Each action has a cost and consumes action points.</p>
       <div id="actionsList" class="actions-list"></div>
       <button id="endTurnBtn" class="secondary">End Turn</button>
     </section>
@@ -46,6 +47,13 @@
     <section class="panel rivals">
       <h2>Companies</h2>
       <div id="playersList"></div>
+    </section>
+
+    <section class="panel sector-panel">
+      <h2>Sector Card</h2>
+      <div id="sectorCard">No card drawn yet.</div>
+      <h2>Win Condition</h2>
+      <p id="winCondition">Reach Exit, achieve £2,500 valuation, or lead after 24 quarters.</p>
     </section>
 
     <section class="panel log-panel">
