@@ -1,3 +1,16 @@
-body { font-family: Arial; background:#0f172a; color:white; padding:20px; }
-h1 { color:#22c55e; }
-button { margin:5px; padding:10px; }
+body{font-family:Inter,Arial;background:#0f172a;color:#e2e8f0;margin:0}
+.hero{display:flex;justify-content:space-between;padding:20px;background:#020617}
+.layout{display:grid;grid-template-columns:2fr 2fr 1fr;gap:12px;padding:12px}
+.panel{background:#020617;border-radius:10px;padding:12px}
+.metric-card{background:#111827;border-radius:8px;padding:8px;margin:4px}
+.action-card{display:block;width:100%;margin:6px 0;padding:10px;background:#1e293b;border:none;border-radius:8px;color:white}
+.company-card{background:#1e293b;padding:6px;margin:4px;border-radius:6px}
+.active-company{border:2px solid #22c55e}
+.market-card{display:block;width:100%;background:#111827;margin:4px;padding:8px;border-radius:8px;border:none;color:white}
+.market-card.selected{border:2px solid #22c55e}
+.mini-bars{background:#111;height:6px;border-radius:4px;margin-top:4px}
+.mini-bars span{display:block;height:6px;background:#22c55e}
+.event-log p{margin:4px 0;font-size:12px}
+.progress-track{background:#111;height:6px;border-radius:4px}
+.progress-fill{background:#22c55e;height:6px}
+.card-highlight{background:#22c55e;color:#020617;padding:6px;border-radius:6px}
