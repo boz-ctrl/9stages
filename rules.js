@@ -61,8 +61,8 @@ function createPlayer(name, isAI = false, personality = "balanced") {
 
 function createAIOpponent(personality = "innovator") {
   if (personality === "innovator") return createPlayer("Dr Bozward", true, "innovator");
-  if (personality === "aggressive") return createPlayer("Aggressive Scale AI", true, "aggressive");
-  if (personality === "conservative") return createPlayer("Conservative Operator AI", true, "conservative");
+  if (personality === "aggressive") return createPlayer("Dr Draycott", true, "aggressive");
+  if (personality === "conservative") return createPlayer("Dr Hyde", true, "conservative");
   return createPlayer("Balanced AI", true, "balanced");
 }
 
